@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&family=Roboto:wght@700&display=swap"
+     rel="stylesheet">
+     <link rel="stylesheet" href="style.css">
+    <title>conversor de moedas</title>
+</head>
+
+<body>
+
+    <img class="logo" src="./img/tio-patinhas-imagem-animada-0001.gif" alt="logo">
+
+    <main>
+        <label>
+            Convertor <b>de</b>
+            <Select class="currency-real">
+                <option value="real">R$ Real Brasileiro</option>
+               
+            </Select>
+        </label>
+
+        <label>
+            Convertor <b>para</b>
+            <Select class="currency-euro">
+                <option value="dolar">RS$ Dolar americano</option>
+                <option value="euro">€ Euro</option>
+                <option value="libra">£ Libra</option>
+                <option value="bitcoin">₿ Bitcoin</option>
+            </Select>
+        </label>
+        <label>
+            Valor
+            <input class="input-currency" placeholder="R$ 10.000,00">
+        </label>
+        <button class="convert-button">
+            Converter
+        </button>
+        <section>
+            <div class="valor">
+                <img class="imgbra" src="./img/brasil 2.png" alt="bandeira-brasil">
+                <p class="moeda" id="currency-nome-valor">Real</p>
+                <p class="valor-real">R$ 0,00</p>
+            </div>
+            
+            <img class="seta" src="./img/Vector.png" alt="seta">
+
+            <div class="valor">
+                <img class="img-bandeira" src="/img/estados-unidos (1) 1.png" alt="bandeira-eua">
+                <p class="moeda" id="currency-name">Dolar</p>
+                <p class="valor-dolar">US$ 0.0</p>
+            </div>
+        </section>
+    </main>
+</body>
+<script src="./scripts.js"></script>
+</html>
